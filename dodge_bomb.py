@@ -35,7 +35,7 @@ def gameover(screen):
     txt = fonto.render("Game Over", True, (255, 255, 255))
     rct.set_alpha(200)
     screen.blit(rct, [0,0]) #画面を暗く
-    screen.blit(txt, [650, 450]) 
+    screen.blit(txt, [650, 450]) #ゲームオーバーを表示
     pg.display.update()
     time.sleep(5)
     return
