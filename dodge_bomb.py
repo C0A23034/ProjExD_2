@@ -34,8 +34,8 @@ def gameover(screen):
     pg.draw.rect(rct, (0, 0, 0), (0,0,1600,900)) 
     txt = fonto.render("Game Over", True, (255, 255, 255))
     rct.set_alpha(200)
-    screen.blit(rct, [0,0])
-    screen.blit(txt, [650, 450])
+    screen.blit(rct, [0,0]) #画面を暗く
+    screen.blit(txt, [650, 450]) 
     pg.display.update()
     time.sleep(5)
     return
@@ -55,7 +55,7 @@ def main():
     bd_rct = bd_img.get_rect()
     bd_rct.center = random.randint(0, WIDTH), random.randint(0, HEIGHT)
     vx, vy = +5, +5
-    clock = pg.time.Clock()
+    clock = pg.time.Clock() 
     tmr = 0
     
     while True:
